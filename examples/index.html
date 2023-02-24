@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Vue组件库测试</title>
+    <script src="https://unpkg.com/vue@2.7.14/dist/vue.js"></script>
+    <script src="https://unpkg.com/http-vue-loader"></script>
+    <link rel="stylesheet" href="../lib/theme-chalk/index.css">
+</head>
+
+<body>
+    <div id="app">
+        <el-button></el-button>
+    </div>
+    <script type="text/javascript">
+        var app = new Vue({
+            el: '#app',
+            data: {},
+            components: {
+                'ElButton': httpVueLoader('../packages/button/src/button.vue')
+            }
+        })
+    </script>
+</body>
+
+</html>
