@@ -20,7 +20,7 @@ const ComponentName = uppercamelcase(componentname);
 const PackagePath = path.resolve(__dirname, '../../packages', componentname);
 const Files = [{
         filename: 'index.js',
-        content: `import ${ComponentName} from './src/main';
+        content: `import ${ComponentName} from './src/main.vue';
 
 /* istanbul ignore next */
 ${ComponentName}.install = function(Vue) {

@@ -1,6 +1,6 @@
 // button.scss
 @import "common/var";
-@import "mixins/minxins";
+@import "mixins/mixins";
 
 @include b(button) {
   background: $--button-default-background-color;

@@ -1,3 +1,7 @@
+<!-- app.vue -->
 <template>
-    <h1>app.vue</h1>
+    <div>
+      <main-header></main-header>
+      <router-view></router-view>
+    </div>
   </template>
